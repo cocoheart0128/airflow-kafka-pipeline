@@ -21,7 +21,7 @@ def producer():
     df=df.rename(columns = {'index':'collect_time'})
     df.collect_time=df.collect_time.astype(str)
 
-    server = "3.38.255.103:9092"
+    server = "*****:9092"
     topic_name = "miniproject_upbit_final"
 
     pr = KafkaProducer(

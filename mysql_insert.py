@@ -9,17 +9,17 @@ import time
 
 def mysql_insert():
 
-    host='testdb.cjibwrwuxobb.ap-northeast-2.rds.amazonaws.com'
+    host='*****.rds.amazonaws.com'
     port='3306'
     database='testdb'
-    user='kexin'
+    user='*****'
     password='*****'
     table='upbit'
     conn = mysql.connector.connect(host=host, port=port, database=database, user=user, password=password)
     cur = conn.cursor()
 
     # kafka consumer 연결
-    Server = '3.38.255.103:9092'
+    Server = '*****:9092'
     topic_name = "miniproject_upbit_final"
     consumer=KafkaConsumer(topic_name, #읽어올 토픽의 이름 필요.
                             bootstrap_servers=[Server], # 어떤 서버에서 읽어 올지 지정

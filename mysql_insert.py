@@ -13,7 +13,7 @@ def mysql_insert():
     port='3306'
     database='testdb'
     user='kexin'
-    password='megazone2023!'
+    password='*****'
     table='upbit'
     conn = mysql.connector.connect(host=host, port=port, database=database, user=user, password=password)
     cur = conn.cursor()
